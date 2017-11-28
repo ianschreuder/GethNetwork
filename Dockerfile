@@ -1,4 +1,4 @@
-FROM ethereum/client-go:v1.7.2
+FROM ethereum/client-go:latest
 
 LABEL maintainer="ian.schreuder@gmail.com"
 
@@ -6,7 +6,7 @@ ENV GENESIS_NONCE="0xabbbcbdbadbdcded" \
     GENESIS_CHAIN_ID=1984 \
     DATA_DIR="/root/.ethereum"
 
-ENV APP_DIR   /svc
+ENV APP_DIR /svc
 WORKDIR $APP_DIR
 
 ADD svc/* $APP_DIR/
