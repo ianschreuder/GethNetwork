@@ -12,16 +12,8 @@ Set the following variables to isolate the network away from the main public Eth
 * GENESIS_NONCE: set to any hex value
 * GENESIS_CHAIN_ID: set to any integer, nodes connect to this when agreed upon
 
-## General Docker Commands
-
-Build the container
+## Review the makefile for tool options
 
 ```sh
-docker build .
-```
-
-Run a node
-
-```sh
-docker run <image name>
+make
 ```
